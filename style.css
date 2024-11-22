@@ -1,0 +1,141 @@
+* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+h1, h2 {
+    color: #275fa0;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Section de contact */
+.contact-section {
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Champs en pleine largeur */
+.form-group.full-width {
+    grid-column: 1 / span 2;
+}
+
+.form-group.full-width button {
+    padding: 15px;
+    background-color: #275fa0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group.full-width button:hover {
+    background-color: #333;
+}
+
+/* Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+/* Aside */
+aside {
+    background-color: #88c1d0;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+}
+
+/* Responsivité */
+@media (max-width: 767px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}
